@@ -30,21 +30,19 @@
 
 <body>
   <nav class="navbar">
-    <a class="navbar-brand" href="./">
-      <img src="./IndiHome.png" alt="Logo" />
+    <div class="navbar-brand">
+      <a href="./">
+        <img src="./IndiHome.png" alt="Logo" />
+      </a>
       <p>Elevate your lifestyle!</p>
-    </a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a href="/" class="nav-link"> Home </a>
-      </li>
-      <li class="nav-item">
-        <a href="#project-section" class="nav-link"> Projects </a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact-section" class="nav-link"> Contact </a>
-      </li>
+    </div>
+    <div class="navbar-navs">
+      <ul>
+        <a href="./"> Home </a>
+        <a href="#project-section"> Projects </a>
+        <a href="#contact-section"> Contact </a>
     </ul>
+    </div>
   </nav>
 
   <section class="about-section">
@@ -144,6 +142,7 @@
       </div>
       <div class="right-btn">
         <a href="#contact-section" class="bounce">Enquire Now!</a>
+      
       </div>
     </div>
     <!-- <div class="p2">
@@ -173,36 +172,55 @@
 
   <section class="contact-section" id="contact-section">
     <div id="chead">Get in Touch with us</div>
-    <div class="contact-box">
-      <div class="left-contact">
-        <label for="">Name</label>
-        <input type="text" name="" id="">
-        <label for="">Phone Number</label>
-        <input type="text" name="" id="">
-        <label for="">Email Id</label>
-        <input type="text" name="" id="">
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="contact-box">
+          <div class="left-contact">
+            <label for="">Name</label>
+            <input type="text" name="" id="">
+            <label for="">Phone Number</label>
+            <input type="text" name="" id="">
+            <label for="">Email Id</label>
+            <input type="text" name="" id="">
+          </div>
+          <div class="right-contact">
+            <label for="">Pincode</label>
+            <input type="text" name="" id="">
+    
+            <label for="pr">Property Requirement</label>
+            <select name="pr" id="pr">
+              <option value="1bhk">1BHK</option>
+              <option value="2bhk">2BHK</option>
+              <option value="3bhk">3BHK</option>
+            </select>
+            <label for="">Budget</label>
+            <input type="text" name="" id="">
+          </div>
+        </div>
+        <div class="button">
+          <button id="sendbtn">Send Message</button>
+        </div> 
       </div>
-      <div class="right-contact">
-        <label for="">Pincode</label>
-        <input type="text" name="" id="">
-
-        <label for="pr">Property Requirement</label>
-        <select name="pr" id="pr">
-          <option value="1bhk">1BHK</option>
-          <option value="2bhk">2BHK</option>
-          <option value="3bhk">3BHK</option>
-        </select>
-        <label for="">Budget</label>
-        <input type="text" name="" id="">
+      <div class="contact-right">
+        <p>Call us for more details!</p>
+        <p>Mob No: <br>+91 7506943320/+91 99871 54120</p>
+        <a href="">
+        <img src="./icons8-instagram-96.webp" width="25px" width="25px"    alt="instagram">
+      </a>
+        <a href="">
+        <img src="./icons8-facebook-96.webp"  width="25px" width="25px" alt="facebook">
+      </a>
       </div>
-    </div>
-    <div class="button">
-      <button id="sendbtn">Send Message</button>
     </div>
 
   </section>
 
-  <footer>&copy; Copyright 2024 IndiHomes.co.in</footer>
+  <footer>
+    <div>
+      &copy; Copyright 2024 IndiHomes.co.in
+    </div>
+    Rera No. A51800040076 
+  </footer>
 
   <script src="bower_components/aos/dist/aos.js"></script>
 
