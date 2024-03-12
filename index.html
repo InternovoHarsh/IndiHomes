@@ -3,7 +3,7 @@
 
 <head>
 
-  <!-- SEO -->
+  <!-- Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IndiHomes</title>
@@ -27,7 +27,7 @@
   <!-- SEO -->
   <meta name="title" content="Indihomes:Elevate your lifestyle">
   <meta name="description" content="We Are Committed To Find Your Dream Home For You At You Dream Price">
-  <meta name="keywords" content="real estate housing market, estate planning, housing">
+  <meta name="keywords" content="indihomes, real estate housing market, estate planning, housing">
   <!-- <meta name="robots" content="index, follow"> -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
@@ -39,7 +39,7 @@
       "@type": "Organization",
       "name": "Indihomes",
       "url": "https://www.indihomes.co.in/",
-      "logo": "https://www.indihomes.co.in/indivest-logo.jpg",
+      "logo": "https://www.indihomes.co.in/IndiHome.png",
       "description": "We Are Committed To Find Your Dream Home For You At You Dream Price",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -267,22 +267,39 @@
 
   </section>
 
+  <!-- <div class="form-section">
+    <form action="" class="contact-form" id="form">
+        <div class="input-container">
+            <input type="text" name="name" id="name" placeholder="Name" class="name-input input">
+            <input type="email" name="email" id="email" placeholder="Email" class="email-input input">
+        </div>
+        <div class="textbox-container">
+            <textarea name="" id="message" placeholder="Message.." class="message-area input"></textarea>
+        </div>
+        <input type="submit" value="Send" class="send-btn" id="submit-btn">
+    </form>
+</div> 
+<div id="success-message" ></div>
+<div class="loading-spinner" id="loading-spinner"></div> -->
+
+
   <section class="contact-section" id="contact-section">
     <div id="chead">Get in Touch with us</div>
     <div class="contact-container">
-      <div class="contact-left">
+      <!-- Left Contact Box -->
+      <!-- <div class="contact-left">
         <div class="contact-box">
           <div class="left-contact">
             <label for="">Name</label>
-            <input type="text" name="" id="">
+            <input type="text" name="name" id="name">
             <label for="">Phone Number</label>
-            <input type="text" name="" id="">
+            <input type="text" name="phoneNum" id="phoneNum">
             <label for="">Email Id</label>
             <input type="text" name="" id="">
           </div>
           <div class="right-contact">
             <label for="">Pincode</label>
-            <input type="text" name="" id="">
+            <input type="text" name="pinCode" id="pinCode">
 
             <label for="pr">Property Requirement</label>
             <select name="pr" id="pr">
@@ -291,13 +308,51 @@
               <option value="3bhk">3BHK</option>
             </select>
             <label for="">Budget</label>
-            <input type="text" name="" id="">
+            <input type="text" name="budget" id="budget">
           </div>
         </div>
         <div class="button">
-          <button id="sendbtn">Send Message</button>
+          <button id="sendbtn" onclick="displayValues()">Send Message</button>
         </div>
+      </div> -->
+
+      <div class="contact-left">
+        <div class="contact-box">
+          <div class="left-contact">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="phoneNum">Phone Number</label>
+            <input type="text" name="phoneNum" id="phoneNum">
+            <label for="email">Email Id</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="right-contact">
+            <label for="pinCode">Pincode</label>
+            <input type="text" name="pinCode" id="pinCode">
+      
+            <label for="pr">Property Requirement</label>
+            <select name="pr" id="pr">
+              <option value="1bhk">1BHK</option>
+              <option value="2bhk">2BHK</option>
+              <option value="3bhk">3BHK</option>
+            </select>
+            <label for="bgt">Budget</label>
+            <select name="bgt" id="bgt">
+              <option value="30 Lakh to 50 Lakh">30 Lakh to 50 Lakh</option>
+              <option value="50 Lakh to 1 Cr">50 Lakh to 1 Cr</option>
+              <option value="Above 1 Cr">Above 1 Cr</option>
+            </select>
+          </div>
+        </div>
+        <div id="success-message" ></div>
+        <div class="loading-spinner" id="loading-spinner"></div>
+        <div class="button">
+          <button id="sendbtn" onclick="displayValues()">Send Message</button>
+        </div>
+
       </div>
+    
+      <!-- Right Contact Box -->
       <div class="contact-right">
         <p>Call us for more details!</p>
         <p>Mob No: <br>+91 7506943320/+91 99871 54120</p>
@@ -347,6 +402,8 @@
     // Initial display
     showSlide(currentIndex);
   </script>
+
+  <script src="./msgfwd.js"></script>
 
 
 
